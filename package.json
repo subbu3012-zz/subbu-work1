@@ -9,7 +9,7 @@
         "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
         "webpack": "webpack",
         "webpack-dev-server": "webpack-dev-server",
-        "heroku-prebuild":"npm run build"
+        "heroku-prebuild":"sh client_build.sh && npm run build"
     },
     "dependencies": {
         "@angular/animations": "^4.4.6",
