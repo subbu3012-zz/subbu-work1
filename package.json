@@ -8,8 +8,6 @@
         "test": "karma start",
         "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
         "move_deps": "cp src/assets/*.* ../../web/assets",
-        // "heroku-prebuild": "echo This runs before Heroku installs your dependencies. && sh client_build.sh",
-        // // "heroku-postbuild": "echo This runs afterwards. && yarn run build",
         "webpack": "webpack",
         "webpack-dev-server": "webpack-dev-server"
     },
