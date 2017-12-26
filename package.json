@@ -7,7 +7,7 @@
         "test": "karma start",
         "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
         "move_deps": "cp src/assets/*.* ../../web/assets",
-        "postinstall": "sh client_build.sh"
+        "postinstall": "yarn run build"
     },
     "dependencies": {
         "@angular/animations": "^4.4.6",
