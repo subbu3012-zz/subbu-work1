@@ -5,7 +5,7 @@
     "scripts": {
         "start": "webpack-dev-server --host 0.0.0.0 --inline --progress --port 7777",
         "test": "karma start",
-        "build": "sh client_build.sh && webpack --config config/webpack.prod.js --progress --profile --bail",
+        "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
         "move_deps": "cp src/assets/*.* ../../web/assets",
         "heroku-prebuild": "echo This runs before Heroku installs your dependencies. && sh client_build.sh",
         "heroku-postbuild": "echo This runs afterwards. && yarn run build"
