@@ -1,12 +1,13 @@
 {
-    "name": "angular2-delightchat",
+    "name": "subbu-work1",
     "version": "1.0.0",
     "description": "A webpack starter for Angular",
     "scripts": {
         "start": "webpack-dev-server --host 0.0.0.0 --inline --progress --port 7777",
         "test": "karma start",
-        "build": "rm -rf ../../web && webpack --config config/webpack.prod.js --progress --profile --bail",
-        "move_deps": "cp src/assets/*.* ../../web/assets"
+        "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
+        "move_deps": "cp src/assets/*.* ../../web/assets",
+        "postinstall": "yarn run build"
     },
     "dependencies": {
         "@angular/animations": "^4.4.6",
