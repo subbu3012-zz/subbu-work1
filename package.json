@@ -50,7 +50,8 @@
         "extract-text-webpack-plugin": "1.0.1",
         "html-webpack-plugin": "2.24.1",
         "awesome-typescript-loader": "2.2.4",
-        "angular2-template-loader": "0.4.0"
+        "angular2-template-loader": "0.4.0",
+        "style-loader": "0.13.1"
     },
     "devDependencies": {
         "@types/core-js": "0.9.35",
@@ -69,7 +70,6 @@
         "phantomjs-prebuilt": "2.1.14",
         "raw-loader": "0.5.1",
         "rimraf": "2.5.4",
-        "style-loader": "0.13.1",
         "typescript": "2.0.10",
         "url-loader": "^0.5.8"
     }
