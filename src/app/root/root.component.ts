@@ -15,6 +15,7 @@ declare const gapi: any;
 
 export class RootComponent {
     public auth2: any;
+    private imagePath: string;
     public googleInit() {
         gapi.load('auth2', () => {
             this.auth2 = gapi.auth2.init({
@@ -26,6 +27,7 @@ export class RootComponent {
         });
     }
     public attachSignin(element: any) {
+        let self = this;
         this.auth2.attachClickHandler(element, {},
             (googleUser: any) => {
 
@@ -34,6 +36,7 @@ export class RootComponent {
                 console.log('ID: ' + profile.getId());
                 console.log('Name: ' + profile.getName());
                 console.log('Image URL: ' + profile.getImageUrl());
+                document.getElementById('profileImg').setAttribute("src", profile.getImageUrl());
                 console.log('Email: ' + profile.getEmail());
                 //YOUR CODE HERE
 
