@@ -5,11 +5,9 @@
     "scripts": {
         "start": "node server.js",
         "start-dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --port 7777",
-        "test": "karma start",
         "build": "webpack --config config/webpack.prod.js --progress --profile",
-        "webpack": "webpack",
-        "webpack-dev-server": "webpack-dev-server",
-        "postinstall": "npm run build"
+        "postinstall": "npm run build",
+        "heroku-postbuild" : "node server.js"
     },
     "dependencies": {
         "@angular/animations": "^4.4.6",
