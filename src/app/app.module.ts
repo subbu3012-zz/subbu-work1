@@ -1,11 +1,11 @@
 /**core angular components */
-import { NgModule } from '../../../node_modules/@angular/core';
-import { Component, Input, OnInit, trigger, state, style, animate, transition } from '../../../node_modules/@angular/core';
-import { FormsModule } from '../../../node_modules/@angular/forms'
-import { BrowserModule } from '../../../node_modules/@angular/platform-browser';
-import { HttpModule } from '../../../node_modules/@angular/http';
+import { NgModule } from '@angular/core';
+import { Component, Input, OnInit, trigger, state, style, animate, transition } from '@angular/core';
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 import { appRoutes } from './app.routing'
-import { RouterModule, Routes } from '../../../node_modules/@angular/router'
+import { RouterModule, Routes } from '@angular/router'
 
 /*app component */
 import { AppComponent } from './app.component';
@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
 import { RootComponent } from "./root/root.component";
 
 /**third party components */
-import { Angulartics2Module, Angulartics2GoogleAnalytics, Angulartics2 } from '../../../node_modules/angulartics2';
+import { Angulartics2Module, Angulartics2GoogleAnalytics, Angulartics2 } from 'angulartics2';
 
 
 @NgModule({

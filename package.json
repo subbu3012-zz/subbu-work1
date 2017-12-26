@@ -1,7 +1,13 @@
 {
-    "name": "angular2-dependencies",
-    "version": "1.0.2",
-    "description": "Loads all the dependencies listed here.",
+    "name": "angular2-delightchat",
+    "version": "1.0.0",
+    "description": "A webpack starter for Angular",
+    "scripts": {
+        "start": "webpack-dev-server --host 0.0.0.0 --inline --progress --port 7777",
+        "test": "karma start",
+        "build": "rm -rf ../../web && webpack --config config/webpack.prod.js --progress --profile --bail",
+        "move_deps": "cp src/assets/*.* ../../web/assets"
+    },
     "dependencies": {
         "@angular/animations": "^4.4.6",
         "@angular/common": "^4.4.6",

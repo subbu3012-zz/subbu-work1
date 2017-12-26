@@ -1,10 +1,10 @@
-import { ChangeDetectorRef, ViewChild, Component, Input, Output, EventEmitter, OnInit, ViewContainerRef } from '../../../../node_modules/@angular/core';
+import { ChangeDetectorRef, ViewChild, Component, Input, Output, EventEmitter, OnInit, ViewContainerRef } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations'
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
-import { Router, ActivatedRoute, NavigationStart, NavigationEnd } from '../../../../node_modules/@angular/router'
-import { Pipe, HostListener } from '../../../../node_modules/@angular/core'
+import { Router, ActivatedRoute, NavigationStart, NavigationEnd } from '@angular/router'
+import { Pipe, HostListener } from '@angular/core'
 import * as Autolinker from 'autolinker'
-import { Cookie } from './../../../../node_modules/ng2-cookies/ng2-cookies'
+import { Cookie } from 'ng2-cookies/ng2-cookies'
 declare const gapi: any;
 
 @Component({

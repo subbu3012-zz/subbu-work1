@@ -1,5 +1,5 @@
-import { ViewChild, Component, Input, OnInit, ViewContainerRef } from '../../../node_modules/@angular/core';
-import { Router, ActivatedRoute, Params } from '../../../node_modules/@angular/router';
+import { ViewChild, Component, Input, OnInit, ViewContainerRef } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 declare var navigator: any;
 declare var Notification: any;
