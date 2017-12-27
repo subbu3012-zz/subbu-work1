@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "A webpack starter for Angular",
     "scripts": {
-        "start": "node server.js",
+        "start": "node index.js",
         "start-dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --port 7777",
-        "build": "webpack --config config/webpack.prod.js --progress --profile",
+        "build": "cd client_src && webpack --config config/webpack.prod.js --progress --profile",
         "postinstall": "npm run build"
     },
     "dependencies": {
@@ -26,7 +26,6 @@
         "bootstrap": "^3.3.7",
         "core-js": "2.4.1",
         "crypto-js": "^3.1.9-1",
-        "express": "^4.16.2",
         "google-libphonenumber": "^3.0.0",
         "jquery": "^3.2.1",
         "libphonenumber-js": "^0.4.23",
@@ -59,6 +58,9 @@
         "phantomjs-prebuilt": "2.1.14",
         "raw-loader": "0.5.1",
         "rimraf": "2.5.4",
-        "url-loader": "^0.5.8"
+        "url-loader": "^0.5.8",
+        "body-parser": "^1.17.2",
+        "express": "^4.16.2",
+        "mongoose": "^4.10.6"
     }
 }
