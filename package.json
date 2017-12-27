@@ -6,7 +6,7 @@
         "start": "node index.js",
         "start-dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --port 7777",
         "build": "cd client_src && webpack --config config/webpack.prod.js --progress --profile",
-        "postinstall": "npm run build"
+        "postinstall": "rm -rf dist && npm run build"
     },
     "dependencies": {
         "@angular/animations": "^4.4.6",
